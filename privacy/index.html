@@ -1,0 +1,285 @@
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Marcut Privacy Policy</title>
+    <style>
+      :root {
+        --bg-1: #f6f3ee;
+        --bg-2: #dbe6ee;
+        --ink: #1c2330;
+        --muted: #586173;
+        --accent: #0f6d62;
+        --accent-2: #b86d2e;
+        --card: rgba(255, 255, 255, 0.9);
+        --border: #e2e6ee;
+        --shadow: 0 18px 50px rgba(16, 24, 40, 0.12);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(900px 600px at 10% -10%, #f0e4d4 0%, transparent 60%),
+          radial-gradient(800px 500px at 90% 0%, #cfe5e1 0%, transparent 55%),
+          linear-gradient(160deg, var(--bg-1), var(--bg-2));
+        font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
+        letter-spacing: 0.1px;
+      }
+
+      header {
+        padding: 64px 20px 24px;
+      }
+
+      .wrap {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 0 20px 72px;
+      }
+
+      .hero {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 28px;
+        box-shadow: var(--shadow);
+      }
+
+      h1 {
+        font-family: "Charter", "Iowan Old Style", "Palatino", serif;
+        font-size: clamp(28px, 3vw, 40px);
+        margin: 0 0 10px;
+        letter-spacing: 0.3px;
+      }
+
+      .subtitle {
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0 0 14px;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .chip {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: #fdfbf8;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin: 18px 0 0;
+        font-size: 13px;
+      }
+
+      nav a {
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+
+      nav a:hover {
+        border-bottom-color: var(--accent);
+      }
+
+      section {
+        margin-top: 24px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 22px 24px;
+        box-shadow: var(--shadow);
+        animation: fadeUp 0.6s ease both;
+        animation-delay: var(--d, 0s);
+      }
+
+      h2 {
+        font-family: "Charter", "Iowan Old Style", "Palatino", serif;
+        font-size: 22px;
+        margin: 0 0 10px;
+      }
+
+      p, li {
+        line-height: 1.6;
+        color: var(--ink);
+      }
+
+      ul {
+        margin: 8px 0 0 18px;
+        padding: 0;
+      }
+
+      .note {
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      .accent {
+        color: var(--accent-2);
+        font-weight: 600;
+      }
+
+      footer {
+        margin-top: 24px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(8px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        section { animation: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="wrap">
+      <div class="hero">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">
+          This policy explains how Marcut handles data. Marcut is a local redaction tool
+          designed to keep confidential documents on your Mac.
+        </p>
+        <div class="chips">
+          <span class="chip">No account required</span>
+          <span class="chip">Local processing</span>
+          <span class="chip">Optional local AI</span>
+          <span class="chip">Sandboxed app</span>
+        </div>
+        <nav>
+          <a href="#overview">Overview</a>
+          <a href="#data">Data We Collect</a>
+          <a href="#use">How We Use Data</a>
+          <a href="#sharing">Sharing</a>
+          <a href="#storage">Storage</a>
+          <a href="#choices">Your Choices</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="note">Effective date: December 28, 2025</p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section id="overview" style="--d: 0.05s;">
+        <h2>Overview</h2>
+        <p>
+          Marcut is a native Mac app that redacts sensitive information from documents.
+          It processes files entirely on your device. There are no accounts, no cloud
+          processing, and no transmission of document content.
+        </p>
+      </section>
+
+      <section id="data" style="--d: 0.1s;">
+        <h2>Data We Collect</h2>
+        <p>
+          <span class="accent">We do not collect or store your document content.</span>
+          Files you open or drag into Marcut stay on your device.
+        </p>
+        <ul>
+          <li>Document content: processed locally only.</li>
+          <li>Account data: none (no account required).</li>
+          <li>Analytics/ads: none.</li>
+        </ul>
+        <p class="note">
+          If you download an optional local AI model, the download is fetched from a hosting
+          server. The host may receive standard request metadata (such as IP address). No
+          document content is ever transmitted.
+        </p>
+      </section>
+
+      <section id="use" style="--d: 0.15s;">
+        <h2>How We Use Data</h2>
+        <ul>
+          <li>To process and redact documents locally on your Mac.</li>
+          <li>To store your app preferences and settings on your device.</li>
+          <li>To download optional local AI models when you choose to install them.</li>
+        </ul>
+        <p class="note">
+          Processing remains on-device regardless of whether AI is enabled.
+        </p>
+      </section>
+
+      <section id="sharing" style="--d: 0.2s;">
+        <h2>Data Sharing</h2>
+        <p>
+          We do not sell or share your data. Marcut has no advertising SDKs and no third-party
+          analytics.
+        </p>
+        <p class="note">
+          Apple may collect diagnostic or crash data if you have opted in to share it with
+          developers through system settings. This data is handled under Apple’s privacy policy.
+        </p>
+      </section>
+
+      <section id="storage" style="--d: 0.25s;">
+        <h2>Local Storage and Retention</h2>
+        <ul>
+          <li>Redacted outputs are saved only to the location you choose.</li>
+          <li>Downloaded AI models are stored locally and can be deleted in Settings.</li>
+          <li>Temporary processing happens in memory and is not retained by the app.</li>
+        </ul>
+      </section>
+
+      <section id="choices" style="--d: 0.3s;">
+        <h2>Your Choices</h2>
+        <ul>
+          <li>Use Rules-Only mode to avoid downloading any AI models.</li>
+          <li>Delete downloaded models at any time in Settings.</li>
+          <li>Control file access by choosing which files to open or drag into the app.</li>
+        </ul>
+        <p class="note">
+          Redaction is a professional review task. You remain responsible for verifying outputs
+          before distribution or filing.
+        </p>
+      </section>
+
+      <section id="children" style="--d: 0.35s;">
+        <h2>Children’s Privacy</h2>
+        <p>
+          Marcut is not directed to children under 13 and does not knowingly collect personal data.
+        </p>
+      </section>
+
+      <section id="changes" style="--d: 0.4s;">
+        <h2>Changes to This Policy</h2>
+        <p>
+          We may update this policy from time to time. The effective date at the top indicates
+          when it was last revised.
+        </p>
+      </section>
+
+      <section id="contact" style="--d: 0.45s;">
+        <h2>Contact</h2>
+        <p>
+          If you have questions about this policy, contact:
+        </p>
+        <p>
+          Marc Mandel<br />
+          https://www.linkedin.com/in/marcmandel/<br />
+        </p>
+      </section>
+
+      <footer>
+        © 2025 Marc Mandel. All rights reserved.
+      </footer>
+    </main>
+  </body>
+  </html>
